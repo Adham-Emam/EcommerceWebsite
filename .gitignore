@@ -1,0 +1,71 @@
+# ---- Python (Django API) ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Django specific
+*.log
+*.pot
+*.pyc
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+static/
+
+# Migrations
+**/migrations/
+!**/migrations/__init__.py
+
+# Environment variables
+.env
+*.env
+
+# Coverage reports
+htmlcov/
+.coverage
+coverage.xml
+
+# Pytest cache
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+
+# API Test
+*.rest
+
+# ---- Node.js (Next.js frontend) ----
+node_modules/
+.next/
+out/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
+
+# Next.js build output
+.next/
+out/
+
+# Vercel deployment
+.vercel/
+
+# ---- IDEs / OS ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

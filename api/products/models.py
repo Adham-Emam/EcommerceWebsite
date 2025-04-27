@@ -55,11 +55,8 @@ class ProductVariant(models.Model):
     product = models.ForeignKey(
         Product, on_delete=models.CASCADE, related_name="variants"
     )
-    colors = models.CharField(max_length=5, choices=SIZE_CHOICES, blank=True, null=True)
+    colors = models.CharField(max_length=5, blank=True, null=True)
     size = models.CharField(
-        max_length=50, blank=True
-    )  # Free-form size input (e.g., custom sizes)
-    size_choice = models.CharField(
         max_length=2, choices=SIZE_CHOICES, blank=True, null=True
     )  # Predefined sizes
     image = models.ImageField(upload_to="product_variants/", null=True, blank=True)
