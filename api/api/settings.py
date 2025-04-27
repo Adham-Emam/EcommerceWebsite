@@ -39,6 +39,7 @@ REST_FRAMEWORK = {
 
 # Application definition
 INSTALLED_APPS = [
+    "products",
     "users",
     "corsheaders",
     "rest_framework_simplejwt.token_blacklist",
@@ -131,6 +132,10 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 # WhiteNoise settings
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+# Define the base path for media files
+MEDIA_URL = "/media/"  # URL that can be used to access media files in the browser
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
